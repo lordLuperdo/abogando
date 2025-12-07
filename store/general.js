@@ -19,7 +19,6 @@ export const useGeneralStore = defineStore('useGeneralStore',()=>{
     const exitos =[
         {id:1,name:"",description:""},
         {id:2,name:"",description:""},
-        {id:3,name:"",description:""},
         {id:4,name:"",description:""},
         {id:5,name:"",description:""},
         {id:6,name:"",description:""},

@@ -15,7 +15,7 @@
                    <input
                        type="email"
                        required
-                       placeholder="Enter your email"
+                       placeholder="Correo"
                        class="w-full pl-12 pr-3 py-2 text-color-cafe-osc bg-color-cafe-claro outline-none border focus:border-indigo-600 shadow-sm rounded-full"
                    />
                </div>

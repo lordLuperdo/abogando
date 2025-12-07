@@ -3,26 +3,29 @@ import Heads from '~/components/Heads.vue';
 import orejocito from '~/assets/imgs/orejoncito.png'
 import foot from '~/components/foot.vue';
 import card_service from '~/components/card_service.vue';
+import card_exito from '~/components/card_exito.vue'
+import formulario from '~/components/formulario.vue';
 
 import { useGeneralStore } from '~/store/general';
 
-const {servicios} = useGeneralStore()
+
+const {servicios,exitos} = useGeneralStore()
 </script>
 
 <template>
-    <main class="bg-color-azul h-[96vh]  flex flex-col ">
+    <main class="bg-[url(~/assets/imgs/bgperro.png)] bg-cover h-[96vh]  flex flex-col ">
 
         <heads></heads>
 
-        <h1 class="font-Merriweather text-center text-white  text-3xl font-black sm:text-6xl mt-16">NUESTA PASIÓN <br/> ES SERVIR </h1>
+        <h1 class="font-Merriweather text-center text-white  text-3xl font-black sm:text-5xl mt-16">NUESTRA PASIÓN <br/> ES SERVIR </h1>
         <p class="font-prueba text-white text-center mt-4">Brindamos soluciones júridicas para cualquier animal </p>
      
         <button class=" mt-6 flex justify-center">
    <div class="w-[70%] p-2 border-2 border-color-cafe-osc rounded-full">
 
        <div class=" p-1 border-2 bg-color-cafe-claro rounded-full flex justify-between items-center">
-          <span class="ml-[30%] text-color-cafe-osc">Escribenos tu solicitud</span>
-          <div class="flex justify-center items-center bg-color-azul w-8 h-8 text-white rounded-full"><span class="">R</span></div>
+          <span class="ml-[30%] text-color-cafe-osc">Escríbenos tu solicitud</span>
+          <div class="flex justify-center items-center bg-color-azul w-8 h-8 text-white rounded-full"><Icon name="uil:github" class="text-white" /></div>
        </div>
     
     </div>
@@ -78,27 +81,24 @@ const {servicios} = useGeneralStore()
    <!--CASOS DE EXITO-->
 
   <div class="degrade2 flex flex-col justify-center items-center">
-    <div class="px-5 py-2 mt-5 bg-color-azul rounded-full">
+    <div class="px-7 py-1 mt-5 bg-color-azul rounded-full">
         <h2 class="text-white  text-2xl font-Merriweather">CASOS DE EXITO</h2>
     </div>
     
-    <p class="font-prueba mt-4">Contamos con más de <span class="bg-color-azul rounded-full p-1 px-4 text-white">30 casos</span> de exito en nuestra misión.</p>
+    <p class="font-prueba mt-4  text-white">Contamos con más de <span class="bg-color-azul rounded-full p-1 px-4 text-white">30 casos</span> de exito en nuestra misión.</p>
 
-    <div class=""></div>
+    <div class=" justify-center items-center flex flex-wrap gap-3 p-5">
+       <card_exito v-for="a in exitos" :key="a"
+       :id="a.id"
+       ></card_exito>
+
+      
+    </div>
   </div> 
   
-  <!--ALIADOS-->
-  <div class=" border-t-4 border-t-color-cafe-osc relative mt-10 mb-10">
-
-    <div class="bg-color-cafe-osc rounded-full px-4 absolute -translate-x-1/2 -translate-y-1/2  left-1/2">
-        <h2 class="SERVICIOS text-white font-Merriweather text-2xl">ALIADOS</h2>
-    </div>
-
-    
-
-
-   </div>
-
+  <!--contactate-->
+  <formulario></formulario>
+ 
   
  
   <foot></foot>

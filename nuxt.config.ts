@@ -2,7 +2,12 @@
 export default defineNuxtConfig({
   compatibilityDate: '2025-07-15',
   devtools: { enabled: true },
-  modules: ['@nuxtjs/google-fonts', '@nuxtjs/tailwindcss','@pinia/nuxt'],
+  modules: [
+    '@nuxtjs/google-fonts',
+    '@nuxtjs/tailwindcss',
+    '@pinia/nuxt',
+    '@nuxt/icon'
+  ],
   googleFonts:{
     families:{
       Poppins:[400,700],
