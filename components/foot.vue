@@ -1,8 +1,8 @@
 <template>
-    <footer class="py-28 relative">
+    <footer class="py-28 relative mt-10">
    <div class="relative z-10 max-w-screen-xl mx-auto px-4 justify-between items-center gap-12 md:px-8 md:flex">
        <div class="flex-1 max-w-lg">
-           <h3 class="text-3xl font-bold text-color-azul">
+           <h3 class="text-3xl font-bold font-Merriweather text-color-azul">
                Dejanos tu correo para poder contactarnos contigo
            </h3>
        </div>

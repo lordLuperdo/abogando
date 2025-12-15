@@ -11,7 +11,7 @@ export default {
       
        screens: {
       
-      'sm': '425px', 
+      'sm': '470px', 
       'md': '768px',
       'lg': '1024px',
       'xl': '1280px',
@@ -22,7 +22,8 @@ export default {
       extend: {
         fontFamily: {
           prueba: ['Poppins', 'sans-serif'],
-          Merriweather: ['Merriweather','sans-serif']
+          Merriweather: ['Philosopher','sans-serif'],
+          
         },
         fontSize: {
           'fixed': '24px', 

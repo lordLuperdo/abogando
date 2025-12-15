@@ -6,12 +6,13 @@ export default defineNuxtConfig({
     '@nuxtjs/google-fonts',
     '@nuxtjs/tailwindcss',
     '@pinia/nuxt',
-    '@nuxt/icon'
+    '@nuxt/icon',
+    
   ],
   googleFonts:{
     families:{
       Poppins:[400,700],
-      Merriweather:[400,600]
+      Philosopher:[400,600]
     },
     display:'swap'
   }

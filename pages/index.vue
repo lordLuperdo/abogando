@@ -1,4 +1,5 @@
 <script setup>
+    
 import Heads from '~/components/Heads.vue';
 import orejocito from '~/assets/imgs/orejoncito.png'
 import foot from '~/components/foot.vue';
@@ -13,19 +14,18 @@ const {servicios,exitos} = useGeneralStore()
 </script>
 
 <template>
-    <main class="bg-[url(~/assets/imgs/bgperro.png)] bg-cover h-[96vh]  flex flex-col ">
+    <main class="bg-[url(~/assets/imgs/bgperro.png)] bg-cover   sm:h-[96vh] px-8  flex flex-col ">
 
         <heads></heads>
 
-        <h1 class="font-Merriweather text-center text-white  text-3xl font-black sm:text-5xl mt-16">NUESTRA PASIÓN <br/> ES SERVIR </h1>
+        <h1 class=" font-Merriweather text-center text-white   font-bold  text-5xl  sm:text-5xl mt-10 sm:mt-16">NUESTRA PASIÓN <br/> ES SERVIR </h1>
         <p class="font-prueba text-white text-center mt-4">Brindamos soluciones júridicas para cualquier animal </p>
      
-        <button class=" mt-6 flex justify-center">
-   <div class="w-[70%] p-2 border-2 border-color-cafe-osc rounded-full">
+        <button class=" mt-6 flex justify-center w-full mb-10 sm:mb-0">
+   <div class="sm:w-[70%] p-2 border-2 w-full border-color-cafe-osc rounded-full">
 
-       <div class=" p-1 border-2 bg-color-cafe-claro rounded-full flex justify-between items-center">
-          <span class="ml-[30%] text-color-cafe-osc">Escríbenos tu solicitud</span>
-          <div class="flex justify-center items-center bg-color-azul w-8 h-8 text-white rounded-full"><Icon name="uil:github" class="text-white" /></div>
+       <div class=" p-1 border-2 bg-color-cafe-claro rounded-full flex justify-between items-center w-full">
+          <span class=" text-color-cafe-osc text-center w-full">Escríbenos tu solicitud</span>
        </div>
     
     </div>
@@ -39,12 +39,12 @@ const {servicios,exitos} = useGeneralStore()
 
 <!--sección 1-->
 
-    <div class="degrade1 sm:p-10 m-7 relative rounded-tr-[5rem] rounded-bl-[3rem]">
+    <div class="degrade1 sm:p-10 sm:pt-6  px-7 pt-7 m-7 relative rounded-tr-[5rem] rounded-bl-[3rem]">
         <div class="sm:w-[60%]">
-            <h3 class="text-color-cafe-osc font-Merriweather text-3xl font-extrabold">¿Qué hacemos?</h3>
-            <p class="font-prueba text-white">Somos una firma que busca prestar asesorías y direccionamiento legal a fundaciones, rescatistas y demás personas que se dedican a la protección y cuidado de animales.</p>
+            <h3 class="text-color-cafe-osc font-Merriweather text-3xl text-center sm:text-start font-extrabold">¿Qué hacemos?</h3>
+            <p class="font-prueba text-white text-center sm:text-left">Somos una firma que busca prestar asesorías y direccionamiento legal a fundaciones, rescatistas y demás personas que se dedican a la protección y cuidado de animales.</p>
         </div>
-        <div class="absolute bottom-0 right-0 sm:w-[40%] md:w-[30%]">
+        <div class="sm:absolute bottom-0 right-0 sm:w-[40%] md:w-[30%]">
             <img :src="orejocito" class="max-w-full" alt="">
         </div>
     </div>
@@ -57,7 +57,7 @@ const {servicios,exitos} = useGeneralStore()
         <h2 class="SERVICIOS text-white font-Merriweather text-2xl">SERVICIOS</h2>
     </div>
 
-    <div class="flex  p-5 mt-7  w-full">
+    <div class="flex flex-col sm:flex-row p-5 mt-7  w-full">
        
         <div class="flex flex-col md:flex-row sm:max-w-[50%] p-2">
          <card-service v-for="a in servicios.slice(0,1)" :key="a"
@@ -80,12 +80,12 @@ const {servicios,exitos} = useGeneralStore()
 
    <!--CASOS DE EXITO-->
 
-  <div class="degrade2 flex flex-col justify-center items-center">
-    <div class="px-7 py-1 mt-5 bg-color-azul rounded-full">
+  <div class="degrade2 flex flex-col justify-center items-center ">
+    <div class="px-7 py-1 mt-5 bg-color-azul  rounded-full">
         <h2 class="text-white  text-2xl font-Merriweather">CASOS DE EXITO</h2>
     </div>
     
-    <p class="font-prueba mt-4  text-white">Contamos con más de <span class="bg-color-azul rounded-full p-1 px-4 text-white">30 casos</span> de exito en nuestra misión.</p>
+    <p class="font-prueba mt-4 text-center mx-10 text-white">Contamos con más de <span class="sm:bg-color-azul rounded-full sm:p-1 sm:px-4 text-white">30 casos</span> de exito en nuestra misión.</p>
 
     <div class=" justify-center items-center flex flex-wrap gap-3 p-5">
        <card_exito v-for="a in exitos" :key="a"
