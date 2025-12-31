@@ -2,8 +2,8 @@
     <footer class="py-28 relative mt-10">
    <div class="relative z-10 max-w-screen-xl mx-auto px-4 justify-between items-center gap-12 md:px-8 md:flex">
        <div class="flex-1 max-w-lg">
-           <h3 class="text-3xl font-bold font-Merriweather text-color-azul">
-               Dejanos tu correo para poder contactarnos contigo
+           <h3 class="text-3xl sm:text-5xl font-bold font-Merriweather text-color-azul">
+               Déjanos tu correo para poder contactarnos contigo
            </h3>
        </div>
        <div class="flex-1 mt-6 md:mt-0">
@@ -16,10 +16,10 @@
                        type="email"
                        required
                        placeholder="Correo"
-                       class="w-full pl-12 pr-3 py-2 text-color-cafe-osc bg-color-cafe-claro outline-none border focus:border-indigo-600 shadow-sm rounded-full"
+                       class="w-full font-prueba sm:text-xl pl-12 pr-3 py-2 text-color-cafe-osc bg-color-cafe-claro outline-none border focus:border-indigo-600 shadow-sm rounded-full"
                    />
                </div>
-               <button class="block w-auto py-3 px-4 font-medium text-sm text-center text-white bg-color-cafe-osc hover:bg-color-azul  active:shadow-none rounded-full shadow">
+               <button class="block font-prueba sm:text-xl w-auto py-3 px-4 font-medium text-sm text-center text-white bg-color-cafe-osc hover:bg-color-azul  active:shadow-none rounded-full shadow">
                    Enviar
                </button>
            </form>

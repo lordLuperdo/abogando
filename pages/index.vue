@@ -14,24 +14,26 @@ const {servicios,exitos} = useGeneralStore()
 </script>
 
 <template>
-    <main class="bg-[url(~/assets/imgs/bgperro.png)] bg-cover   sm:h-[96vh] px-8  flex flex-col ">
+    <main class="bg-[url(~/assets/imgs/bgperro.png)] bg-cover   sm:h-[96vh] px-8   flex flex-col ">
 
         <heads></heads>
 
-        <h1 class=" font-Merriweather text-center text-white   font-bold  text-5xl  sm:text-5xl mt-10 sm:mt-16">NUESTRA PASIÓN <br/> ES SERVIR </h1>
-        <p class="font-prueba text-white text-center mt-4">Brindamos soluciones júridicas para cualquier animal </p>
+        <div class="flex flex-col justify-center items-center h-full">
+
+        <h1 class=" font-Merriweather text-center text-white   font-bold  text-5xl mt-10 sm:mt-0 sm:text-8xl  3xl:text-9xl">NUESTRA PASIÓN <br/> ES SERVIR </h1>
+        <p class="font-prueba text-white sm:text-xl text-center 3xl:text-2xl mt-4">Brindamos soluciones júridicas para cualquier animal </p>
      
-        <button class=" mt-6 flex justify-center w-full mb-10 sm:mb-0">
+        <button class=" mt-7 flex justify-center w-full mb-10 sm:mb-0">
    <div class="sm:w-[70%] p-2 border-2 w-full border-color-cafe-osc rounded-full">
 
-       <div class=" p-1 border-2 bg-color-cafe-claro rounded-full flex justify-between items-center w-full">
-          <span class=" text-color-cafe-osc text-center w-full">Escríbenos tu solicitud</span>
+       <div class=" p-1 sm:p-5 border-2 bg-color-cafe-claro rounded-full flex justify-between items-center w-full">
+          <span class=" text-color-cafe-osc font-prueba sm:text-xl text-center 3xl:text-2xl w-full">Escríbenos tu solicitud</span>
        </div>
     
     </div>
-</button>
+       </button>
 
-
+       </div>
 
 
 
@@ -39,22 +41,22 @@ const {servicios,exitos} = useGeneralStore()
 
 <!--sección 1-->
 
-    <div class="degrade1 sm:p-10 sm:pt-6  px-7 pt-7 m-7 relative rounded-tr-[5rem] rounded-bl-[3rem]">
-        <div class="sm:w-[60%]">
-            <h3 class="text-color-cafe-osc font-Merriweather text-3xl text-center sm:text-start font-extrabold">¿Qué hacemos?</h3>
-            <p class="font-prueba text-white text-center sm:text-left">Somos una firma que busca prestar asesorías y direccionamiento legal a fundaciones, rescatistas y demás personas que se dedican a la protección y cuidado de animales.</p>
+    <div class="degrade1 sm:p-10 sm:pt-6  px-7 pt-7 m-7 relative rounded-tr-[5rem] rounded-bl-[3rem] 3xl:mx-60">
+        <div class="sm:w-[60%]  ">
+            <h3 class="text-color-cafe-osc font-Merriweather text-3xl text-center sm:text-start sm:text-4xl font-extrabold 3xl:text-5xl">¿Qué hacemos?</h3>
+            <p class="font-prueba sm:text-xl text-white text-center sm:text-left sm:mt-2 3xl:text-2xl">Somos una firma que busca prestar asesorías y direccionamiento legal a fundaciones, rescatistas y demás personas que se dedican a la protección y cuidado de animales.</p>
         </div>
-        <div class="sm:absolute bottom-0 right-0 sm:w-[40%] md:w-[30%]">
+        <div class="sm:absolute bottom-0  justify-center flex  w-full right-0 sm:w-[40%] sm:px-0  px-10 md:w-[30%] 3xl:w-[23%]">
             <img :src="orejocito" class="max-w-full" alt="">
         </div>
     </div>
 
     <!--Servicios-->
   
-   <div class=" border-t-4 border-t-color-cafe-osc relative  mt-10 mb-10">
+   <div class=" border-t-4 sm:border-t-8 border-t-color-cafe-osc relative sm:mt-16  mt-10 mb-10">
 
-    <div class="bg-color-cafe-osc rounded-full px-4 absolute -translate-x-1/2 -translate-y-1/2  left-1/2">
-        <h2 class="SERVICIOS text-white font-Merriweather text-2xl">SERVICIOS</h2>
+    <div class="bg-color-cafe-osc rounded-full px-10 py-2 absolute -translate-x-1/2 -translate-y-1/2  left-1/2">
+        <h2 class="SERVICIOS text-white font-Merriweather text-2xl sm:text-4xl">SERVICIOS</h2>
     </div>
 
     <div class="flex flex-col sm:flex-row p-5 mt-7  w-full">
