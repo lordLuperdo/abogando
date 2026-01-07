@@ -1,27 +1,16 @@
 <script setup>
     import Heads from '~/components/Heads.vue';
+    import {useGeneralStore} from '~/store/general';
+    import formulario from '~/components/formulario.vue';
+    import foot from '~/components/foot.vue';
+
+    const General = useGeneralStore()
  
-    const items = ref([
-  {
-    title: "How do I create an account?",
-    content: `Click the "Sign Up" button in the top right corner and follow the registration process.`,
-    open: true
-  },
-  {
-    title: "I forgot my password. What should I do?",
-    content: `Click on "Forgot Password" on the login page and follow the instructions sent to your email.`,
-    open: false
-  },
-  {
-    title: "How do I update my profile information?",
-    content: `Go to "My Account" settings and select "Edit Profile" to make changes.`,
-    open: false
-  }
-])
+   
 
 const toggle = (index) => {
   // estilo acordeón → solo uno abierto
-  items.value.forEach((item, i) => {
+  General.servicios.forEach((item, i) => {
     item.open = i === index ? !item.open : false
   })
 }
@@ -41,31 +30,38 @@ const toggle = (index) => {
 
 </main class=" ">
 
- <div class="space-y-4 px-5">
+ <div class="space-y-4 px-5 flex flex-col">
     <div
-      v-for="(item, index) in items"
+      v-for="(item, index) in General.servicios"
       :key="index"
       class="border-2 border-color-cafe-osc bg-color- rounded-lg"
     >
       <button
         @click="toggle(index)"
-        class="w-full flex justify-between items-center px-4 py-3 text-xl font-semibold font-Merriweather"
+        class="w-full flex justify-between items-center px-4 py-3 text-xl sm:text-3xl font-semibold font-Merriweather"
       >
-        {{ item.title }}
+        {{ item.name }}
         <span>{{ item.open ? '-' : '+' }}</span>
       </button>
 
       <transition name="accordion">
-        <div v-if="item.open" class="p-4 pt-0 text-sm font-prueba flex flex-col">
-          {{ item.content }}
-          <div class=" p-1 mt-2 border-2 border-color-cafe-osc rounded-full">
+        <div v-if="item.open" class="p-4 pt-0 text-sm sm:text-xl font-prueba flex flex-col md:flex-row">
+            <img :src="item.photo" alt="" class="w-full rounded-lg">
+            
+         <div class="flex flex-col sm:p-20 items-center justify-center">
+          {{ item.description }}
+          <div class=" p-1 mt-5 border-2 border-color-cafe-osc rounded-full w-full">
                       <button class=" flex justify-center w-full rounded-full p-3 text-white font-prueba font-semibold bg-color-cafe-osc">Solicitar</button>
 
           </div>
+         </div>   
+          
         </div>
       </transition>
     </div>
   </div>
+
+  <foot></foot>
 
 </template>
 

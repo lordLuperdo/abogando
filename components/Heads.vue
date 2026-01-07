@@ -1,7 +1,27 @@
 <script setup>
     import abogando from '~/assets/imgs/abogandoporlosanimales.png'
+    import { useGeneralStore } from '~/store/general';
+    import { useRoute } from 'vue-router';
+    import { useRouter } from 'vue-router';
+
+    const route = useRoute()
+    const router = useRouter()
+
+    const General = useGeneralStore()  
+
     const active = ref(false)
 
+    defineProps(["s"])
+
+    const scrollSection = (f) => {
+        if(route.path === '/'){
+            General.scrollToS(f)
+        }else{
+            router.push('/#formulario')
+        }
+    }
+
+   
     
 </script>
 
@@ -26,7 +46,7 @@
            <button class="text-white px-3 py-2 3xl:px-10 3xl:text-2xl" @click="navigateTo('/nosotros')">Nosotros</button>
        </li>
        <li class="">
-           <button class="text-white px-3 py-2 3xl:px-10 3xl:text-2xl bg-color-azul rounded-full " @click="">Contacto</button>
+           <button class="text-white px-3 py-2 3xl:px-10 3xl:text-2xl bg-color-azul rounded-full " @click="scrollSection(s)">Contacto</button>
        </li>
    </ul>
 
@@ -55,7 +75,7 @@
                <button class="text-color-azul w-full py-2  font-Merriweather font-semibold  bg-color-cafe-claro px-2 border-2 border-color-cafe-osc rounded-full" @click="navigateTo('Nosotros')">Nosotros</button>
            </li>
            <li class="w-full">
-               <button class="text-color-azul w-full py-2  font-Merriweather font-semibold  bg-color-cafe-claro px-2 border-2 border-color-cafe-osc rounded-full" @click="">Contacto</button>
+               <button class="text-color-azul w-full py-2  font-Merriweather font-semibold  bg-color-cafe-claro px-2 border-2 border-color-cafe-osc rounded-full" @click="scrollSection(s)">Contacto</button>
            </li>
        </ul>
    </div>

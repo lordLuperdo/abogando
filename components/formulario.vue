@@ -10,8 +10,8 @@
 
 <div class="flex flex-col w-full sm:flex-row gap-2">
  
-     <div class="sm:w-[50%]  sm:min-h-full h-36">
-        <div class="p-1 border-2 rounded-xl h-full border-color-cafe-osc">
+     <div class="sm:w-[50%]  sm:min-h-full ">
+        <div class="p-1 border-2 rounded-xl h-36 sm:h-full border-color-cafe-osc">
     <textarea placeholder="Déjanos un resumen de tu caso" name="" id="" class="bg-color-cafe-claro w-full h-full rounded-xl"> 
 
     </textarea>
