@@ -17,10 +17,10 @@
         if(route.path === '/'){
             General.scrollToS(f)
         }else{
-            router.push('/#formulario')
+            router.push(`/#${f}`) 
         }
     }
-
+    
    
     
 </script>
@@ -29,13 +29,13 @@
     <header class="flex relative">
 
 
-<div class="sm:flex hidden degrade w-full mx-8  rounded-full justify-between   relative  mt-14 font-prueba text-xl">
+<div class="sm:flex hidden degrade w-full mx-8  rounded-full justify-between   relative  mt-14 font-prueba ">
    <ul class="flex items-center  justify-center gap-7 p-2">
        <li class="">
-           <button class="text-white px-3 py-2 3xl:px-10 3xl:text-2xl" @click="navigateTo('/servicios')">Servicios</button>
+           <button class="text-white px-3 py-2 " @click="navigateTo('/servicios')">Servicios</button>
        </li>
        <li class="">
-           <button class="text-white px-3 py-2 3xl:px-10 3xl:text-2xl" @click="">Aliados</button>
+           <button class="text-white px-3 py-2 " @click="scrollSection('exito')">Casos</button>
        </li>
    </ul>
 
@@ -43,10 +43,10 @@
 
    <ul class="flex items-center  justify-center gap-7 p-2">
        <li class="">
-           <button class="text-white px-3 py-2 3xl:px-10 3xl:text-2xl" @click="navigateTo('/nosotros')">Nosotros</button>
+           <button class="text-white px-3 py-2 " @click="navigateTo('/nosotros')">Nosotros</button>
        </li>
        <li class="">
-           <button class="text-white px-3 py-2 3xl:px-10 3xl:text-2xl bg-color-azul rounded-full " @click="scrollSection(s)">Contacto</button>
+           <button class="text-white px-3 py-2  bg-color-azul rounded-full " @click="scrollSection('formulario')">Contacto</button>
        </li>
    </ul>
 

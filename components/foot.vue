@@ -20,7 +20,7 @@
                    />
                </div>
                <button class="block font-prueba sm:text-xl w-auto py-3 px-4 font-medium text-sm text-center text-white bg-color-cafe-osc hover:bg-color-azul  active:shadow-none rounded-full shadow">
-                   Enviar
+                    Enviar
                </button>
            </form>
            <div class="flex gap-2">
