@@ -1,7 +1,35 @@
-<script setup></script>
+<script setup>
+import emailjs from "@emailjs/browser"
+
+
+const valor_boton = ref("Enviar")
+const name = ref('')
+const number = ref('')
+const message = ref('')
+const email = ref('')
+
+emailjs.init('HZJR_BmzqZWxZywyx')
+
+const send_email = () => {
+const form = document.getElementById('myform')
+valor_boton.value = "Enviando..."
+
+const serviceID = 'service_43b62cv';
+const templateID = 'template_2k2qdbx';
+emailjs.sendForm(serviceID,templateID,form)
+.then(() => {
+      valor_boton.value = 'Correo enviado';
+      alert('Sent!');
+    }, (err) => {
+      valor_boton.value = 'Intentalo más tarde';
+      alert(JSON.stringify(err));
+    });
+}
+
+</script>
 <template>
 
-<form action="" class="bg-color-azul flex flex-col p-3 degrade3 rounded-xl mx-10  3xl:mx-36 3xl:px-20 3xl:py-10">
+<form @submit.prevent="send_email" id="myform" action="" class="bg-color-azul flex flex-col p-3 degrade3 rounded-xl mx-10  3xl:mx-36 3xl:px-20 3xl:py-10">
 
 <div class="p-4 font-extrabold">
     <h2 class="text-2xl sm:text-3xl text-white text-center font-Merriweather 3xl:pb-7 3xl:text-6xl">ENVIANOS TU CASO</h2>
@@ -12,7 +40,7 @@
  
      <div class="sm:w-[50%]  sm:min-h-full ">
         <div class="p-1 border-2 rounded-xl h-36 sm:h-full border-color-cafe-osc">
-    <textarea placeholder="Déjanos un resumen de tu caso" name="" id="" class="bg-color-cafe-claro flex items-start justify-start  w-full h-full rounded-xl"> 
+    <textarea v-model="message" name="message" placeholder="Déjanos un resumen de tu caso"  id="" class="bg-color-cafe-claro flex items-start justify-start  w-full h-full rounded-xl p-3 text-lg"> 
 
     </textarea>
     </div>
@@ -22,6 +50,8 @@
 
         <div class="p-1 border-2 font-prueba text-md rounded-full border-color-cafe-osc">
             <input
+                v-model="name"
+                name="name"
                 type="text"
                 required
                 placeholder="Nombre de tu empresa"
@@ -30,6 +60,8 @@
         </div>
         <div class="p-1 border-2 font-prueba text-md rounded-full border-color-cafe-osc">
             <input
+                v-model="number"
+                name="number"
                 type="number"
                 required
                 placeholder="Número"
@@ -38,6 +70,8 @@
         </div>
         <div class="p-1 border-2 font-prueba text-md rounded-full border-color-cafe-osc">
             <input
+                v-model="email"
+                name="email"
                 type="email"
                 required
                 placeholder="Correo"
@@ -48,13 +82,15 @@
     </div>
 </div>
 
-<button class="mt-5" >
+<button type="submit" class="mt-5" >
     <div class="p-1 border-2 rounded-full border-color-cafe-osc">
             <div class="w-full text-center py-1 text-white bg-color-cafe-osc outline-none b4 shadow-sm rounded-full md:p-4 font-prueba sm:text-lg">
-               Enviar
+               {{ valor_boton }}
              </div>
         </div>
 </button>
+
+
 
 </form>
 </template>

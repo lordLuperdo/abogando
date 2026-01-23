@@ -26,7 +26,7 @@
 </script>
 
 <template>
-    <header class="flex relative">
+    <header class="flex relative z-50">
 
 
 <div class="sm:flex hidden degrade w-full mx-8  rounded-full justify-between   relative  mt-14 font-prueba ">
@@ -54,7 +54,7 @@
 </div>
 
 
-<div class="flex gap-4 sm:hidden items-center w-full justify-b justify-between relative mt-5">
+<div class="flex gap-4 sm:hidden items-center w-full justify-b justify-between relative mt-5 ">
 
 
    <button class=" top-0 w-28 " @click="navigateTo('')"><img :src="abogando" alt="" class=""></button>

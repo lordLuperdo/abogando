@@ -6,12 +6,17 @@
 
     const General = useGeneralStore()
  
+
+ 
+
+
+
    
 
 const toggle = (index) => {
   // estilo acordeón → solo uno abierto
   General.servicios.forEach((item, i) => {
-    item.open = i === index ? !item.open : false
+    item.open = i === index ? !item .open : false
   })
 }
 
@@ -22,8 +27,8 @@ const toggle = (index) => {
    <Heads></Heads>
    
    <div class="">
-    <h1 class="font-Merriweather text-center text-color-cafe-osc  text-5xl font-black sm:text-5xl mt-10 sm:mt-16">NUESTROS SERVICIOS</h1>
-            <p class="font-prueba text-color-cafe-osc text-center mt-4 mb-10 ">Conoce lo que tenemos para tu empresa </p>
+    <h1 class="font-Merriweather text-center text-color-azul  text-5xl font-black sm:text-5xl mt-10 sm:mt-16">NUESTROS SERVICIOS</h1>
+            <p class="font-prueba text-gray-600 text-center mt-4 mb-10 ">Conoce lo que tenemos para tu empresa </p>
    
 </div>
     
@@ -40,6 +45,8 @@ const toggle = (index) => {
         @click="toggle(index)"
         class="w-full flex justify-between items-center px-4 py-3 text-xl sm:text-3xl font-semibold font-Merriweather"
       >
+
+         
         {{ item.name }}
         <span>{{ item.open ? '-' : '+' }}</span>
       </button>
@@ -48,7 +55,7 @@ const toggle = (index) => {
         <div v-if="item.open" class="p-4 pt-0  sm:text-md font-prueba flex flex-col md:flex-row">
             <img :src="item.photo" alt="" class="w-full object-cover rounded-lg">
             
-         <div class="flex flex-col sm:p-20 sm:w-[87%] items-center justify-center">
+         <div class="flex flex-col sm:p-20 sm:w-[87%] mt-3 sm:mt-0 items-center justify-center">
           {{ item.description }}
           <div class=" p-1 mt-5 border-2 border-color-cafe-osc rounded-full w-full">
                       <button class=" flex justify-center w-full rounded-full p-3 text-white font-prueba font-semibold bg-color-cafe-osc">Solicitar</button>

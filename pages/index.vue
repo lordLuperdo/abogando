@@ -10,6 +10,12 @@ import formulario from '~/components/formulario.vue';
 import { useGeneralStore } from '~/store/general';
 
 
+
+
+
+
+
+
 const {servicios,exitos, scrollToS} = useGeneralStore()
 
 
@@ -69,14 +75,15 @@ const saliados = ""
 
     </main>
 
+
 <!--sección 1-->
 
-    <div class=" degrade1 lg:p-10 sm:pt-6 3xl:mt-14 px-7 p-7 m-7 relative rounded-tr-[5rem] rounded-bl-[3rem] sm:mx-20 3xl:mx-60">
+    <div class=" degrade1 lg:p-10 sm:pt-6 3xl:mt-14 px-7 sm:p-7 pt-7  m-7 relative rounded-tr-[5rem] rounded-bl-[3rem] sm:mx-20 3xl:mx-60">
         <div class="sm:w-[60%]  3xl:p-10">
             <h3 class="text-color-cafe-osc font-Merriweather text-3xl text-center sm:text-start sm:text-3xl font-extrabold ">¿Qué hacemos?</h3>
             <p class="font-prueba sm:text-lg text-white text-center sm:text-left sm:mt-2 3xl:text-2xl">Somos una firma que busca prestar asesorías y direccionamiento legal a fundaciones, rescatistas y demás personas que se dedican a la protección y cuidado de animales.</p>
         </div>
-        <div class="sm:absolute bottom-0  justify-center flex  w-full right-0 sm:w-[40%] sm:px-0  px-10 md:w-[30%] 3xl:w-[23%]">
+        <div class="sm:absolute bottom-0   justify-center flex  w-full right-0 sm:w-[40%] sm:px-0  px-10 md:w-[30%] 3xl:w-[23%]">
             <img :src="orejocito" class=" exitos max-w-full sm:max-w-80 "   alt="">
         </div>
     </div>
@@ -118,7 +125,7 @@ const saliados = ""
 
   <div class="degrade2 flex flex-col justify-center items-center ">
     <div class="px-7 py-1 mt-5 bg-color-azul  rounded-full xl:mt-10">
-        <h2 class="text-white   font-Merriweather text-2xl sm:text-4xl">NUESTROS CLIENTES</h2>
+        <h2 class="text-white   font-Merriweather text-2xl sm:text-4xl">Organizaciones que confían en nosotros</h2>
     </div>
     
     <p class="font-prueba mt-4 text-center mx-10 text-white xl:mt-7 ">Contamos con más de <span class="sm:bg-color-azul rounded-full sm:p-1 sm:px-4 text-white">10 casos</span> de exito en nuestra misión.</p>

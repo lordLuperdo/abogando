@@ -9,7 +9,7 @@ import foot from '~/components/foot.vue';
    <Heads></Heads>
    
    <div class="">
-    <h1 class="font-Merriweather text-center text-color-cafe-osc  text-4xl font-BOLD sm:text-5xl mt-10 sm:mt-16 sm:mb-10">CONOCENOS MÁS A FONDO</h1>
+    <h1 class="font-Merriweather text-center text-color-azul  text-4xl font-bold sm:text-5xl mt-10 sm:mt-16 sm:mb-10">CONOCENOS MÁS A FONDO</h1>
         
    
 </div>
@@ -76,7 +76,7 @@ import foot from '~/components/foot.vue';
           <h2 class="text-center font-Merriweather font-bold text-3xl sm:text-7xl text-color-cafe-claro" sm:mb-3>VISIÓN</h2>
           <p class="text-center text-white">
             Ser el aliado legal para el rescate animal en Colombia.
-            <br><
+            <br>
             Visualizamos un futuro donde todas las fundaciones y rescatistas tengan el conocimiento y respaldo jurídico necesario para salvar vidas animales de forma segura y eficiente.
 
           </p>
