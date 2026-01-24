@@ -1,6 +1,6 @@
 <script setup>
     
-     defineProps(['name','description', 'imagen'])
+     defineProps(['name','description', 'imagen','link'])
 </script>
 <template>
     <div class="degrade3 flex flex-col rounded-md p-5 h-full w-full items-center justify-center">
@@ -8,10 +8,10 @@
          <img :src="imagen" alt="" class="w-full rounded-lg">
         <h3 class="text-white font-Merriweather text-2xl mt-5 sm:text-2xl font-black">{{ name }}</h3>
         <p class="text-white font-prueba mt-2 sm:text-md sm:text-center ">{{ description }}</p>
-         <button @click="navigateTo('/servicios')" class="min-w-full mt-6 flex justify-center">
+         <button  class="min-w-full mt-6 flex justify-center">
         <div class="w-full p-1 border-2 border-color-cafe-osc rounded-full">
 
-        <a href="" class=" border-2 bg-color-cafe-claro rounded-full flex justify-center items-center">
+        <a :href="link" target="_LANG" class=" border-2 bg-color-cafe-claro rounded-full flex justify-center items-center">
           <span class=" text-color-cafe-osc text-center font-prueba p-2 sm:p-3 xl:text-xl  font-medium">Conocer más</span>
         </a>
     

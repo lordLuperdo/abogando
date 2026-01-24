@@ -138,6 +138,7 @@ const saliados = ""
       :name="exito.name"
       :description="exito.description"
       :imagen="exito.photo"
+      :link="exito.link"
       ></card_exito>
 
       

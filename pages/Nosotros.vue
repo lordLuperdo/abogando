@@ -20,7 +20,7 @@ import foot from '~/components/foot.vue';
 <section class="flex relative  flex-col md:px-16 px-4 mt-10 gap-6 sm:text-xl ">
 
         
-        <div class="bg-blue-500  sm:h-[60vh]  sticky top-10 z-0 rounded-lg overflow-hidden">
+        <div class="bg-blue-500  h-[70vh] sm:h-[60vh]  sticky top-10 z-0 rounded-lg overflow-hidden">
       
           <div class="relative  flex flex-col items-center justify-center p-5 w-full h-full sm:p-40">
                     <h2 class="text-center font-Merriweather font-bold text-3xl sm:text-7xl sm:mb-3 z-10 text-color-cafe-claro">NUESTRO PROPÓSITO</h2>
@@ -30,7 +30,7 @@ import foot from '~/components/foot.vue';
                     </p>
                     
                    <video
-                          class="absolute top-0 left-0 w-full max-h-full object-cover  z-0"
+                          class="absolute top-0 left-0 min-h-full  sm:w-full sm:max-h-full object-cover  z-0"
     
                           src="/components/ui/videos/fondo.mp4"
                           autoplay
@@ -43,7 +43,7 @@ import foot from '~/components/foot.vue';
 
          
         </div>
-        <div class="bg-blue-500  sm:h-[60vh]  sticky top-10 z-0 rounded-lg overflow-hidden">
+        <div class="bg-blue-500 h-[70vh] sm:h-[60vh]  sticky top-10 z-0 rounded-lg overflow-hidden">
       
           <div class="relative  flex flex-col items-center justify-center p-5 w-full h-full sm:p-40">
                     <h2 class="text-center font-Merriweather font-bold text-3xl sm:text-7xl sm:mb-3 z-10 text-color-cafe-claro">MISIÓN</h2>
@@ -52,7 +52,7 @@ import foot from '~/components/foot.vue';
                     </p>
                     
                    <video
-                          class="absolute top-0 left-0 w-full max-h-full object-cover  z-0"
+                          class="absolute top-0 left-0 min-h-full  sm:w-full sm:max-h-full object-cover  z-0"
     
                           src="/components/ui/videos/proposito.mp4"
                           autoplay
@@ -67,7 +67,7 @@ import foot from '~/components/foot.vue';
         </div>
         
 
-        <div class=" p-5 sm:p-40 sm:h-[60vh] rounded-lg flex flex-col items-center justify-center  sticky top-10 z-20  backdrop-blur-xl border-2 border-color-cafe-claro ">
+        <div class=" p-5 sm:p-40 h-[70vh] sm:h-[60vh] rounded-lg flex flex-col items-center justify-center  sticky top-10 z-20  backdrop-blur-xl border-2 border-color-cafe-claro ">
       
           <div class="relative">
 

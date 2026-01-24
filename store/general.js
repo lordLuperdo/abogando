@@ -75,17 +75,23 @@ export const useGeneralStore = defineStore('useGeneralStore',()=>{
             id:1,
             name:"Gato Latte",
             photo:logogato,
-            description:"Ayudamos y cuidamos a gatitos recatados Toda garrita cuenta 🐾 Reserva en nuestro café y transformemos sus GatiVidas juntos 👇"},
+            description:"Ayudamos y cuidamos a gatitos recatados Toda garrita cuenta 🐾 Reserva en nuestro café y transformemos sus GatiVidas juntos 👇",
+            link:"https://www.instagram.com/gatolattehome/"
+        },
         {
             id:2,
             name:"Criollos de la Montaña",
             photo:logocriollo,
-            description:"Somos una fundación cuya sede principal está ubicada en Lenguazaque, Cundinamarca, a dos horas y media de Bogotá, constituidos legalmente desde febrero del año 2022. Albergamos actualmente 45 animales entre caninos y felinos, distribuidos entre las instalaciones de nuestro refugio y en diferentes hogares de paso."},
+            description:"Somos una fundación cuya sede principal está ubicada en Lenguazaque, Cundinamarca, a dos horas y media de Bogotá, constituidos legalmente desde febrero del año 2022. Albergamos actualmente 45 animales entre caninos y felinos, distribuidos entre las instalaciones de nuestro refugio y en diferentes hogares de paso.",
+            link:"https://www.instagram.com/fundacioncriollosdelamontana/"
+        },
         {
             id:3,
             name:"La Catsa",
             photo:logocatsa,
-            description:"¡Una experiencia para conectarse con la naturaleza!!🐔🐓🐱🌄 Productos y servicios 🎁Pauta para empresas con sentido zoocial🏆📢 Haz parte del cambio🙏🏼❤️🐕🐈"}, 
+            description:"¡Una experiencia para conectarse con la naturaleza!!🐔🐓🐱🌄 Productos y servicios 🎁Pauta para empresas con sentido zoocial🏆📢 Haz parte del cambio🙏🏼❤️🐕🐈",
+            link:"https://www.instagram.com/lacatsacolombia/?hl=es"
+        }, 
         
     ]
 
