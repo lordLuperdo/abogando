@@ -64,7 +64,7 @@ const saliados = ""
        </div>
 
         <video
-    class="absolute top-0 left-0 w-full max-h-full object-cover  z-0"
+    class="absolute top-0 left-0 min-h-full sm:w-full max-h-full object-cover  z-0"
     
     src="/components/ui/videos/fondo.mp4"
     autoplay
