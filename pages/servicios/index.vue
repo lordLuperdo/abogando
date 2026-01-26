@@ -28,7 +28,7 @@ const toggle = (index) => {
    
    <div class="">
     <h1 class="font-Merriweather text-center text-color-azul  text-5xl font-black sm:text-5xl mt-10 sm:mt-16">NUESTROS SERVICIOS</h1>
-            <p class="font-prueba text-gray-600 text-center mt-4 mb-10 ">Conoce lo que tenemos para tu empresa </p>
+            <p class="font-prueba text-gray-600 text-center mt-4 mb-10 ">Conoce los servicios que ofrecemos para acompañarte y brindarte respaldo legal en la protección animal. </p>
    
 </div>
     

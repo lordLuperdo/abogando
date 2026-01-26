@@ -10,7 +10,8 @@ import foot from '~/components/foot.vue';
    
    <div class="">
     <h1 class="font-Merriweather text-center text-color-azul  text-4xl font-bold sm:text-5xl mt-10 sm:mt-16 sm:mb-10">CONOCENOS MÁS A FONDO</h1>
-        
+                    <p class="font-prueba text-gray-600 text-center mt-4  ">Conoce quiénes somos, qué nos mueve y cómo trabajamos cada día para brindar apoyo legal a quienes dedican su vida a la protección y defensa de los animales en Colombia. </p>
+
    
 </div>
     
@@ -20,7 +21,7 @@ import foot from '~/components/foot.vue';
 <section class="flex relative  flex-col md:px-16 px-4 mt-10 gap-6 sm:text-xl ">
 
         
-        <div class="bg-blue-500  h-[70vh] sm:h-[60vh]  sticky top-10 z-0 rounded-lg overflow-hidden">
+        <div class=" bg-color-azul  h-[70vh] sm:h-[60vh]  sticky top-10 z-0 rounded-lg overflow-hidden">
       
           <div class="relative  flex flex-col items-center justify-center p-5 w-full h-full sm:p-40">
                     <h2 class="text-center font-Merriweather font-bold text-3xl sm:text-7xl sm:mb-3 z-10 text-color-cafe-claro">NUESTRO PROPÓSITO</h2>
