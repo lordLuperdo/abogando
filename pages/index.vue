@@ -124,8 +124,8 @@ const saliados = ""
    <!--CASOS DE EXITO-->
 
   <div class="degrade2 flex flex-col justify-center items-center ">
-    <div class="px-7 py-1 mt-5 bg-color-azul  rounded-full xl:mt-10">
-        <h2 class="text-white   font-Merriweather text-2xl sm:text-4xl">Organizaciones que confían en nosotros</h2>
+    <div class="px-7 py-3 mt-5 bg-color-azul mx-5 sm:mx-0  rounded-full xl:mt-10">
+        <h2 class="text-white   font-Merriweather  text-center text-2xl sm:text-4xl">Organizaciones que confían en nosotros</h2>
     </div>
     
     <p class="font-prueba mt-4 text-center mx-10 text-white xl:mt-7 ">Contamos con más de <span class="sm:bg-color-azul rounded-full sm:p-1 sm:px-4 text-white">10 casos</span> de exito en nuestra misión.</p>
