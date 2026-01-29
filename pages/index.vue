@@ -180,7 +180,7 @@ background: linear-gradient(0deg, rgb(177, 134, 60,0) 0%, rgba(177, 134, 60));
 @keyframes show {
     from{
         opacity: 0;
-        scale: 25%;
+        scale: 92%;
     }
     to{
         opacity: 1;

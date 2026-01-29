@@ -8,18 +8,17 @@ const number = ref('')
 const message = ref('')
 const email = ref('')
 
-emailjs.init('HZJR_BmzqZWxZywyx')
+emailjs.init('js3rmuSUWTGbaWTLv')
 
 const send_email = () => {
 const form = document.getElementById('myform')
 valor_boton.value = "Enviando..."
 
-const serviceID = 'service_43b62cv';
-const templateID = 'template_2k2qdbx';
+const serviceID = 'service_hmko6kp';
+const templateID = 'template_o7yczis';
 emailjs.sendForm(serviceID,templateID,form)
 .then(() => {
       valor_boton.value = 'Correo enviado';
-      alert('Sent!');
     }, (err) => {
       valor_boton.value = 'Intentalo más tarde';
       alert(JSON.stringify(err));
@@ -29,7 +28,7 @@ emailjs.sendForm(serviceID,templateID,form)
 </script>
 <template>
 
-<form @submit.prevent="send_email" id="myform" action="" class="bg-color-azul flex flex-col p-3 degrade3 rounded-xl mx-10  3xl:mx-36 3xl:px-20 3xl:py-10">
+<form @submit.prevent="send_email" id="myform" action="" class="bg-color-azul exitos flex flex-col p-3 degrade3 rounded-xl mx-5 sm:mx-10  3xl:mx-36 3xl:px-20 3xl:py-10">
 
 <div class="p-4 font-extrabold">
     <h2 class="text-2xl sm:text-3xl text-white text-center font-Merriweather 3xl:pb-7 3xl:text-6xl">ENVIANOS TU CASO</h2>
